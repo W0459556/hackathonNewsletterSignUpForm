@@ -86,7 +86,6 @@ input[type=submit]:hover, input[type=reset]:hover{
 
 input[type=checkbox], input[type=radio]{
     accent-color: #e93479;
-    margin: 10px;
 }
 
 a{
