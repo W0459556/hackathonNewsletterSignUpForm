@@ -1,0 +1,93 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+@media only screen and (max-width: 800px){
+    .grid-container{
+        grid-template-columns: 0% 100% 0%;
+    }
+}
+
+.header{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    text-align: center;
+    background-color: #e93479;
+    padding: 10px;
+    color: #300350;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sidebar-left{
+    background-color: #f9ac53;
+}
+
+.content{
+    background-color: #ac89d6;
+    padding: 20px;
+}
+
+.sidebar-right{
+    background-color: #f9ac53;
+}
+
+body{
+    margin: 0px;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=datetime-local], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    background-color: #f9ac53;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=datetime-local]:focus, select:focus {
+    background-color: #e93479;
+    color: #300350;
+}
+
+input[type=datetime-local]{
+    text-align: center;
+}
+
+p, label, ul {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #300350;
+}
+
+ul {
+    margin: 0px 0px 0px 20px;
+}
+
+input[type=submit], input[type=reset]{
+    border: none;
+    color: 300350;
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #f9ac53;
+    border: 1px solid #ccc;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+    background-color: #e93479;
+    color: #300350;
+}
+
+a{
+    color: #300350
+}
+
+a:hover{
+    color:#e93479;
+}
